@@ -1,104 +1,53 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Honda CR-V EXL 2012/2012 à venda em Tubarão/SC. SUV completo, excelente estado de conservação, pneus novos, bancos de couro, ar-condicionado digital. Confira!">
-    <meta property="og:title" content="Honda CR-V EXL 2012/2012 à Venda - Tubarão/SC">
-    <meta property="og:description" content="SUV completo em excelente estado. Confira agora!">
-    <meta property="og:image" content="caminho-da-imagem.jpg">
-    <meta property="og:url" content="URL-do-seu-site">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Honda CR-V EXL 2012/2012 à Venda - SUV Completo</title>
-</head>
-<body>
+/* Importar fontes modernas */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-<header>
-    <h1>Honda CR-V EXL 2012</h1>
-    <p>Venda particular - Tubarão/SC</p>
-</header>
+/* Estilo global */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    box-sizing: border-box;
+}
 
-<!-- Preço e Localização -->
-<section class="price-location">
-    <h2>R$ 73.500</h2>
-    <p>Tubarão/SC - Contato: Joel</p>
-</section>
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-<main class="container">
-    <!-- Carrossel de imagens -->
-    <section class="carousel">
-        <img src="Frente_Lateral_Motorista.jpeg" alt="Honda CR-V visto de frente e lateral do motorista">
-        <img src="Frente.jpeg" alt="Frente do Honda CR-V">
-        <img src="Traseira_Lateral_Motorista.jpeg" alt="Vista traseira e lateral do motorista do Honda CR-V">
-        <img src="Traseira_Lateral_Carona.jpeg" alt="Vista traseira e lateral do carona do Honda CR-V">
-        <img src="Interna_Motorista.jpeg" alt="Interior do Honda CR-V visto do banco do motorista">
-        <img src="Interna_Visão_Fundo.jpeg" alt="Interior do Honda CR-V, visão do fundo">
-    </section>
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
 
-    <!-- Características -->
-    <section class="caracteristicas">
-        <div class="caracteristica">
-            <img src="calendar.png" alt="Ano/Modelo">
-            <span>2012/2012</span>
-        </div>
-        <div class="caracteristica">
-            <img src="speedometer.png" alt="Quilometragem">
-            <span>153.000 KM</span>
-        </div>
-        <div class="caracteristica">
-            <img src="gearshift.png" alt="Câmbio">
-            <span>Automático</span>
-        </div>
-        <div class="caracteristica">
-            <img src="gas-station.png" alt="Combustível">
-            <span>Gasolina</span>
-        </div>
-        <div class="caracteristica">
-            <img src="car-painting.png" alt="Cor">
-            <span>Prata</span>
-        </div>
-        <div class="caracteristica">
-            <img src="license-plate.png" alt="Final da Placa">
-            <span>Final 9</span>
-        </div>
-    </section>
+header p {
+    font-size: 1.2rem;
+    margin: 5px 0 0;
+}
 
-    <!-- Caixa Expansível -->
-    <section class="expandable" aria-labelledby="more-info">
-        <a href="#" onclick="toggleContent()">Mais informações</a>
-        <div class="expandable-content" id="more-info">
-            <p>
-                Este Honda CR-V EXL 2012/2012 é um SUV de alto padrão, ideal para quem busca segurança, conforto e confiabilidade. 
-                O veículo está em excelente estado de conservação, com revisões periódicas em dia e pneus Michelin novos. 
-                Equipado com bancos de couro premium, ar-condicionado digital e direção elétrica, oferece uma experiência de direção 
-                confortável e sofisticada.
-            </p>
-            <p>
-                Além disso, este modelo possui câmbio automático, tração 4WD e amplo espaço interno, tornando-o perfeito para famílias 
-                ou viagens. Sem detalhes de funilaria ou pintura, é uma oportunidade imperdível para quem busca um carro usado 
-                com ótimo custo-benefício em Tubarão/SC.
-            </p>
-        </div>
-    </section>
+.price-location {
+    background-color: white;
+    margin: 20px auto;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
-    <!-- Call to Action -->
-    <section class="cta">
-        <a href="https://wa.me/+5548999495056" target="_blank">Entre em Contato pelo WhatsApp</a>
-    </section>
-</main>
+.price-location h2 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
 
-<script>
-    function toggleContent() {
-        const content = document.getElementById('more-info');
-        if (content.style.display === 'none' || content.style.display === '') {
-            content.style.display = 'block';
-        } else {
-            content.style.display = 'none';
-        }
-    }
-</script>
+.price-location p {
+    font-size: 1rem;
+    color: #666;
+}
 
-</body>
-</html>
+/* Adicione o restante do CSS previamente fornecido */
